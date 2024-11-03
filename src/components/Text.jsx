@@ -11,11 +11,11 @@ const {personName,filteredName}=useSelector((state)=>state.person)
  <ul className="list-style">
  {filteredName.map((names) => (
    <div key={names.id} className="item-style">
-     <li>{names?.name}</li>
-     <li>{names?.id}</li>
-     <li>{names?.age}</li>
-     <li>{names?.country}</li>
-     <li>{names?.profession}</li>
+     <li>Name: {names?.name}</li>
+     <li>Id: {names?.id}</li>
+     <li>Age: {names?.age}</li>
+     <li>Country: {names?.country}</li>
+     <li>Profession: {names?.profession}</li>
    </div>
  ))}
 </ul>
